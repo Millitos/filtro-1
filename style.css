@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.border{
+    background-color: lightcyan;
+}
+
+.table{
+    margin: 3px;
+}
+#table-clientes,#table-gestion-vj{
+    background-color:rgb(8, 173, 173) ;
+}
+
+section{
+    padding-top: 10px;
+}
+
+#pag-principal,#colCarousel{
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}

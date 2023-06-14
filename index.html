@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- bootstrap-icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Campus GameSoft</title>
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <nav data-bs-theme="dark" class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+
+            <a class="navbar-brand" href="#pag-principal"><i class="bi bi-controller"></i></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a href="#header-clientes" class="nav-link active" aria-current="page">Clientes</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#header-gestionVJ">Gestion VJ</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#header-compra-vj">Compra VJ</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#header-fidelizacion">Fidelización</a>
+                    </li>
+                </ul>
+                <!-- <form class="d-flex" role="search">
+        			<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        			<button class="btn btn-outline-success" type="submit">Search</button>
+        		</form> -->
+            </div>
+        </div>
+    </nav>
+
+    <!-- ENTRADA DE PAGINA*************************** -->
+
+    <div id="pag-principal" class="container">
+        <div class="row">
+            <div id="colCarousel" class="col-6">
+                <div id="carouselExample" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/control.jpg" class="d-block w-100" alt="control">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/player.jpg" class="d-block w-100" alt="player">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/setup.jpg" class="d-block w-100" alt="set-up">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/games.jpg" class="d-block w-100" alt="games">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="col-6">
+                <div class="card" style="width: 18rem;">
+                    <img src="img/control2.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Campus GameSoft</h5>
+                        <p class="card-text">Deja fluir tu felicidad comprando juegos en Campus GameSoft</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><a href="#header-clientes" class="card-link">Gestión Clientes</a></li>
+                        <li class="list-group-item"><a href="#header-gestionVJ" class="card-link">Gestión VideoJuegos</a></li>
+                        <li class="list-group-item"><a href="#header-compra-vj" class="card-link">Compra VideoJuegos</a></li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="#header-fidelizacion" class="card-link">Fidelización</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- CLIENTES************************************ -->
+    <section class="container border border-4">
+        <header id="header-clientes" class="text-center">
+            <h1>Clientes</h1>
+        </header>
+
+        <div class=" text-center">
+            <div class="row ">
+
+                <!-- formulario clientes-->
+                <div class="col-sm-12 col-md-4 border border-4">
+                    <form id="form-clientes">
+
+                        <div class="mb-3">
+                            <label for="nit" class="form-label">NIT</label>
+                            <input type="number" name="nit" class="form-control" id="nit" name="nit">
+                        </div>
+                        <div class="mb-3">
+                            <label for="nombres" class="form-label">Nombres</label>
+                            <input type="text" class="form-control" id="nombres" name="nombres">
+                        </div>
+                        <div class="mb-3">
+                            <label for="apellidos" class="form-label">Apellidos</label>
+                            <input type="text" class="form-control" id="apellidos" name="apellidos">
+                        </div>
+                        <div class="mb-3">
+                            <label for="telefono" class="form-label">Telefono</label>
+                            <input type="number" class="form-control" id="telefono" name="telefono">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Correo Electronico</label>
+                            <input type="email" class="form-control" id="email" name="email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="nacimiento" class="form-label">Fecha de nacimiento</label>
+                            <input type="date" class="form-control" id="nacimiento" name="birth">
+                        </div>
+                        <div class="mb-3">
+                            <label for="nacionalidad" class="form-label">Nacionalidad</label>
+                            <input type="text" class="form-control" id="nacionalidad" name="nacionalidad">
+                        </div>
+
+                        <!-- botones -->
+                        <button type="submit" class="btn btn-primary">Agregar</button>
+
+                    </form>
+                    <br>
+                    <!-- btn buscar -->
+                    <button type="submit" id="btnBuscar" class="btn btn-info" data-action="buscar">Buscar</button>
+
+                </div>
+
+                <!-- table -->
+                <div id="table-clientes" class="col-sm-12 col-md-8  border border-4 table-responsive">
+                    <!-- input buscar -->
+                    <div>
+                        <input class="container" type="text" id="search-input"
+                            placeholder="Busqueda por nit,nombres o apellidos">
+                    </div>
+                    <table class="table table-hover table-success table-striped margin:2px">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">NIT</th>
+                                <th scope="col">Nombres</th>
+                                <th scope="col">Apellidos</th>
+                                <th scope="col">Teléfono</th>
+                                <th scope="col">Email</th>
+                                <th scope="col">Fecha de nacimiento</th>
+                                <th scope="col">Nacionalidad</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tbody-clientes">
+                            <!-- agregados dinamicamente -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- debo arreglar!!!!!!!!! -->
+    <br>
+    <br>
+    <br>
+
+    <!-- GESTION VJ************************************ -->
+    <section class="container border border-4">
+        <header id="header-gestionVJ" class="text-center">
+            <h1>Gestión de Video Juegos</h1>
+        </header>
+
+
+        <div class="container text-center">
+            <div class="row ">
+                <!-- formulario gestion video juegos -->
+                <div class="col-sm-12 col-md-4 border border-4">
+                    <form id="form-gestion-vj">
+
+                        <div class="mb-3">
+                            <label for="nombre-vj" class="form-label">Nombre Video Juego</label>
+                            <input type="text" name="nit" class="form-control" id="nombre-vj" name="nit">
+                        </div>
+                        <!-- <div class="mb-3">
+                            <label for="tematica-vj" class="form-label">Temática</label>
+                            <input type="text" class="form-control" id="tematica-vj" name="nombres">
+                        </div> -->
+                        <div class="mb-3">
+                            <select class="form-select" id="tematica-vj">
+                                <option value="">Temática</option>
+                                <option value="Aventura">Aventura</option>
+                                <option value="Ciencia">Ciencia</option>
+                                <option value="Ficcion">Ficción</option>
+                                <option value="Fantasia">Fantasia</option>
+                                <option value="Terror">Terror</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="valor-licencia-vj" class="form-label">Valor licencia</label>
+                            <input type="number" class="form-control" id="valor-licencia-vj" name="apellidos">
+                        </div>
+                        <div class="mb-3">
+                            <label for="puntos-vj" class="form-label">Puntos</label>
+                            <input type="number" class="form-control" id="puntos-vj" name="telefono">
+                        </div>
+
+                        <!-- botones -->
+                        <button type="submit" class="btn btn-primary">Agregar</button>
+
+                    </form>
+                </div>
+
+                <!-- table gestión video juegos-->
+                <div id="table-gestion-vj" class="col-sm-12 col-md-8  border border-4 table-responsive">
+
+                    <table class="table table-hover table-success table-striped margin:2px">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Nombre VJ</th>
+                                <th scope="col">Temática</th>
+                                <th scope="col">Valor licencia</th>
+                                <th scope="col">Puntos</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tbody-gestion-vj">
+                            <!-- agregados dinamicamente -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <br>
+    <br>
+
+    <section class="container border border-4">
+        <header id="header-compra-vj" class="text-center">
+            <h1>Compra Video Juegos</h1>
+        </header>
+
+        <div class="container text-center">
+            <div class="row">
+                <div class="col border border-4">
+
+                    <form id="form-compra-vj">
+                        <div>
+                            <select class="form-select" id="nombreCliente">
+                                <option value="">Clientes</option>
+                            </select>
+                        </div>
+                        <div>
+                            <select class="form-select" id="nombreJuego">
+                                <option value="">VideoJuegos</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="valorVj" class="form-label">Valor VideoJuego</label>
+                            <input type="text" class="form-control" id="valorVj" name="valor">
+                        </div>
+
+                        <button type="submit" class="btn btn-success">Comprar</button>
+
+                    </form>
+
+
+
+                </div>
+            </div>
+
+            <div class="row">
+                <h2>Historial de compras</h2>
+                <div id="cardsContainer" class="col container-cards">
+                    <!-- agregados dinamicamente -->
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <br>
+    <br>
+    <br>
+
+    <!-- fidelizacion**************************************************** -->
+
+    <section class="container border border-4">
+        <header id="header-fidelizacion" class="text-center">
+            <h1>Fidelización</h1>
+        </header>
+
+        <div class="container text-center">
+            <div class="row">
+                <div class="col border border-4 table-responsive">
+                    <!-- table gestión video juegos-->
+                    <div id="table-fidelizacion" class="border border-4 table-responsive">
+
+                        <table class="table table-hover table-success table-striped margin:2px">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Nombres</th>
+                                    <th scope="col">Apellidos</th>
+                                    <th scope="col">Puntos</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tbody-fidelizacion">
+                                <!-- agregados dinamicamente -->
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <!-- javascript -->
+    <script src="app.js"></script>
+</body>
+
+</html>
